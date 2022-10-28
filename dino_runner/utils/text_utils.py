@@ -2,8 +2,8 @@ import pygame
 
 from dino_runner.utils.constants import SCREEN_HEIGHT, SCREEN_WIDTH
 
-FONT_COLOR = (0, 0, 0)
-FONT_SIZE = 22
+FONT_COLOR = (255, 0, 0)
+FONT_SIZE = 27
 FONT_STYLE = "freesansbold.ttf"
 
 
@@ -20,3 +20,4 @@ def draw_message_component(
     text_rect = text.get_rect()
     text_rect.center = (pos_x_center, pos_y_center)
     screen.blit(text, text_rect)
+    
