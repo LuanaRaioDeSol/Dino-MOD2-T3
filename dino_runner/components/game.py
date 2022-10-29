@@ -5,11 +5,6 @@ from dino_runner.components.obstacles.obstacle_manager import ObstacleManager
 from dino_runner.utils.text_utils import draw_message_component
 from dino_runner.components.powerups.power_up_manager import PowerUpManager
 
-<<<<<<< Updated upstream
-  
-=======
->>>>>>> Stashed changes
-
 class Game:
     def __init__(self):
         pygame.init()
@@ -75,7 +70,7 @@ class Game:
 
     def draw(self):          #COMEÇANDO A DESENHAR O QUE PRECISA TER NO JOGO:
         self.clock.tick(FPS)          #desenhando o relogio
-        self.screen.fill((0, 255, 0)) # "#FFFFFF"  #desenhando o fundo do jogo
+        self.screen.fill(( 252 , 233 , 79 )) # "#FFFFFF"  #desenhando o fundo do jogo
         self.draw_background()      #background = O senário de fundo do jogo
         self.player.draw(self.screen)     #desenhando o jogador
         self.obstacle_manager.draw(self.screen) #desehando os obstáculos 
@@ -129,7 +124,7 @@ class Game:
 
         
     def show_menu(self):     #codificando o menu do jogo, ou seja, a abertura do jogo.
-        self.screen.fill((0, 255, 0)) #cor do fundo da aberturab do jogo.
+        self.screen.fill(( 237 , 212 , 0 )) #cor do fundo da aberturab do jogo.
         half_screen_height = SCREEN_HEIGHT // 2 # half_screen_height=
         half_screen_width = SCREEN_WIDTH // 2   # // =divisão inteira
 
